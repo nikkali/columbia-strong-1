@@ -1,0 +1,11 @@
+menu:
+  - title: Need Assistance?
+    url: "need-assistance"
+  - title: Contact Us
+    url: "contact-us"
+  - title: About Us
+    url: "about-us"
+  - title: FAQ
+    url: "faqs"
+  - title: Donate Now
+    url: "https://donorbox.org/http-www-columbia-strong-org"

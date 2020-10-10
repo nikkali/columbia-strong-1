@@ -1,0 +1,15 @@
+menu:
+  - title: Resources
+    url: "resources"
+  - title: Contact Us
+    url: "contact-us"
+copyright: Designed by <a href="http://www.relevantdesign.cc/" class="font-semibold">Relevant Design</a>
+social:
+  - url: https://www.facebook.com/columbiastrong
+    icon: facebook
+  - url: https://www.twitter.com/columbiastrong
+    icon: twitter
+  - url: https://www.google.com/columbiastrong
+    icon: google-plus
+  - url: https://columbia-strong.org/feed/
+    icon: feed

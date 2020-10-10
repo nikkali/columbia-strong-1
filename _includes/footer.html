@@ -1,2 +1,25 @@
-</body>
-</html>
+<footer class="text-sm ">
+  <div class="bg-dark1">
+    <div class="m-auto max-w-screen-lg p-4">
+      <ul class=" text-white  flex items-center justify-center md:justify-start">
+        {%for i in site.data.footer.menu%}
+        <li class="{%if forloop.last%}ml-8{%endif%}"><a href="{{i.link}}">{{i.title}}</a>
+        </li>
+        {%endfor%}
+      </ul>
+    </div>
+  </div>
+  <div class="bg-dark2">
+    <div
+      class="m-auto max-w-screen-lg p-4 text-opacity-50 flex flex-col-reverse md:flex-row justify-between items-center text-white bg-dark2">
+      <span class="">{{site.data.footer.copyright}}</span>
+      <ul class="text-3xl flex">
+        {%for i in site.data.footer.social%}
+        <li class="{%if forloop.last==false%}mr-8{%endif%}"><a href="{{i.link}}"><i
+              class="fa fa-{{i.icon}}"></i>{{i.title}}</a>
+        </li>
+        {%endfor%}
+      </ul>
+    </div>
+  </div>
+</footer>
