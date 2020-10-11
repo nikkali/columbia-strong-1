@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="md:m-16 m-4 p-4 mx-auto max-w-screen-lg leading-6">
+  <img src="{{site.data.about.pic[0].url}}" alt="{{site.data.about.pic[0].alt}}" class="md:float-right md:ml-8">
+  {%for i in site.data.about.paragraphs%}
+  <div class="mb-8">
+    <h3 class="text-2xl mb-4 mt-4 md:mt-0">{{i.title}}</h3>
+    <p>{{i.p}}</p>
+    {%if i.a%}
+    <a href="{{i.a.url}}" class="block w-40 mt-4"><img src="{{i.a.img}}" alt="logo of pinebelt"></a>
+    {%endif%}
+  </div>
+  {%endfor%}
+</div>

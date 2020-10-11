@@ -1,5 +1,57 @@
 ---
 layout: default
 ---
+{%assign d = site.data.home%}
+<img src="{{d.heroimg}}" alt="">
+<div class="md:p-16 px-4 p-8 ml-0 mr-0 bg-black text-white">
+  {{/*  section of services  */}}
+  <div class="md:flex items-center mb-8">
+    <img src="{{d.img2}}" alt="tornado of 2014" class="md:w-1/2 md:mr-4 mb-8 md:mb-0">
+    <div class="md:w-1/2 md:ml-8">
+      {%for s in d.services%}
+      <div class="mb-4 md:p-8 pb-0">
+        <img src="/assets/Columbia-Strong-icon-04.png" alt="icon of Columbia-Strong" class="w-8 m-auto">
+        <div class="text-center">
+          <h3 class="text-lg mb-2">{{s.title}}</h3>
+          <p>{{s.p}}</p>
+        </div>
+      </div>
+      {%endfor%}
+    </div>
+  </div>
+  {{/*  section of donations  */}}
+  <div>
+    <h3 class="text-lg">Donations of ${{d.totaldonation}}</h3>
+    <div class="bg-white rounded-sm overflow-hidden {%if d.donation > 50%}text-white{%else%}text-red-700{%endif%}">
+      <div class="bg-red-700 h-5 font-semibold relative" style="width: {{d.donation}}%;"><span class="absolute right-0 {%if d.donation < 50%}transform{%endif%}
+          translate-x-full">{{d.donation}}%</span>
+      </div>
+    </div>
+  </div>
+  <div class="md:flex justify-between md:p-16 mt-8 md:mt-0">
+    {%for c in d.counter%}
+    <div class="flex flex-col text-center mb-8 md:mb-0">
+      <span class="text-red-600 text-5xl block">{{c.value}}</span>
+      <span>{{c.title}}</span>
+    </div>
+    {%endfor%}
+  </div>
+  {{/*  section of asking donations  */}}
+  <div class="md:p-8 p-4 text-center bg-red-700">It is our mission to restore community and rebuild lives. Help us
+    provide a
+    home to the uninsured and
+    underinsured families that have lost their home from this storm. Partner with us to help restore the community of
+    Columbia, MS.
+    <br>
+    <a href="https://donorbox.org/http-www-columbia-strong-org"
+      class="inline-block p-2 px-4 mt-4 border border-white hover:text-red-600 hover:bg-white">Donate
+      Now</a>
+  </div>
+  <div class="p-8 text-center ">
+    <a href="/need-assistance"
+      class="inline-block p-2 px-4 mt-4 border border-white hover:text-red-600 hover:bg-white">Do you Need
+      Assistance?</a>
+  </div>
 
-<h1 class="text-white text-4xl font-semibold">Jekyll Starter Tailwind</h1>
+</div>
+<img src="{{d.footerimg}}" alt="restoring community building lives">

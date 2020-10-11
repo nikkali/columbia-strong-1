@@ -1,0 +1,24 @@
+heroimg: /assets/Screen-Shot-2020-04-22-at-5.jpg
+footerimg: /assets/restoring community building lives.jpg
+
+img2: /assets/2014-tornado_doll92rs-1024x576.jpg
+services:
+  - title: Recover
+    p: It’s a beautiful thing to see people from all walks of life, working together and leaning on each other to make a difference.
+  - title: Restore
+    p: Volunteers, business owners and community leaders work together to restore our strong community.
+  - title: Rebuild
+    p: A Foundation of Community Support to change the lives of those affected in a greater way
+
+donation: 0
+totaldonation: 50,000
+
+counter:
+  - title: Homes Destroyed
+    value: 19
+  - title: Total Homes Affected
+    value: 109
+  - title: + Volunteers and Counting
+    value: 4524
+  - title: Unified Effort
+    value: 1

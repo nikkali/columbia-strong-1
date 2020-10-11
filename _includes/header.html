@@ -1,11 +1,11 @@
 <header class="text-white bg-black">
   <div class="m-auto max-w-screen-lg p-4 flex items-center justify-between relative">
-    <img src="" alt="logo">
-    <nav class="bg-black duration-100 w-4/5 md:w-auto md:border-none border-red-600 absolute bottom-0 left-half
-      transform translate-y-full -translate-x-1/2 h-0 overflow-hidden " id="mainnav">
+    <a href="/"><img src="{{site.data.header.logo}}" alt="logo" class="w-48 lg:w-64"></a>
+    <nav class="bg-black duration-100 w-4/5 md:w-auto md:border-none border-red-600 absolute md:static bottom-0 left-half
+      transform md:transform-none translate-y-full -translate-x-1/2 h-0 md:h-auto overflow-hidden " id="mainnav">
       <ul class="text-sm md:flex items-center">
         {%for i in site.data.header.menu%}
-        <li class="md:ml-8 p-4"><a href="{{i.link}}"
+        <li class="md:ml-8 p-4 md:p-0"><a href="/{{i.url}}"
             class="{%if forloop.last%}text-red-600 border border-red-600 inline-block p-1 px-4 hover:text-white hover:border-white{%else%} hover:opacity-50{%endif%}  duration-100">{{i.title}}</a>
         </li>
         {%endfor%}
