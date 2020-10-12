@@ -3,7 +3,7 @@
     <div class="m-auto max-w-screen-lg p-4">
       <ul class=" text-white  flex items-center justify-center md:justify-start">
         {%for i in site.data.footer.menu%}
-        <li class="{%if forloop.last%}ml-8{%endif%}"><a href="{{i.link}}">{{i.title}}</a>
+        <li class="{%if forloop.last%}ml-8{%endif%}"><a href="/{{i.url}}">{{i.title}}</a>
         </li>
         {%endfor%}
       </ul>
