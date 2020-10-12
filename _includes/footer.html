@@ -15,7 +15,7 @@
       <span class="">{{site.data.footer.copyright}}</span>
       <ul class="text-3xl flex">
         {%for i in site.data.footer.social%}
-        <li class="{%if forloop.last==false%}mr-8{%endif%}"><a href="{{i.link}}"><i
+        <li class="{%if forloop.last==false%}mr-8{%endif%}"><a href="{{i.url}}"><i
               class="fa fa-{{i.icon}}"></i>{{i.title}}</a>
         </li>
         {%endfor%}
