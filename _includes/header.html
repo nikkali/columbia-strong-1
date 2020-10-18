@@ -5,7 +5,7 @@
       transform md:transform-none translate-y-full -translate-x-1/2 h-0 md:h-auto overflow-hidden " id="mainnav">
       <ul class="text-sm md:flex items-center">
         {%for i in site.data.header.menu%}
-        <li class="md:ml-8 p-4 md:p-0"><a href="/{{i.url}}"
+        <li class="md:ml-8 p-4 md:p-0"><a href="{{i.url}}"
             class="{%if forloop.last%}text-red-600 border border-red-600 inline-block p-1 px-4 hover:text-white hover:border-white{%else%} hover:opacity-50{%endif%}  duration-100">{{i.title}}</a>
         </li>
         {%endfor%}
