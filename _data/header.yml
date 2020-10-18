@@ -1,12 +1,12 @@
 logo: /assets/Columbia-Strong-Logo1-031.png
 menu:
   - title: Need Assistance?
-    url: "need-assistance"
+    url: "/need-assistance"
   - title: Contact Us
-    url: "contact-us"
+    url: "/contact-us"
   - title: About Us
-    url: "about-us"
+    url: "/about-us"
   - title: FAQ
-    url: "faqs"
+    url: "/faqs"
   - title: Donate Now
     url: "https://donorbox.org/http-www-columbia-strong-org"
